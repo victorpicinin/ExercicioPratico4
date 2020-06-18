@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'editar-sintomas',
     loadChildren: () => import('./editar-sintomas/editar-sintomas.module').then( m => m.EditarSintomasPageModule)
+  },
+  {
+    path: 'form',
+    loadChildren: () => import('./form/form.module').then( m => m.FormPageModule)
   }
 ];
 
